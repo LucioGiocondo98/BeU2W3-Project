@@ -1,6 +1,8 @@
 package com.example.BeU2W3_Project.services;
 
 import com.example.BeU2W3_Project.dto.CreateEventDTO;
+import com.example.BeU2W3_Project.exceptions.ResourceNotFoundException;
+import com.example.BeU2W3_Project.exceptions.UnauthorizedOperationException;
 import com.example.BeU2W3_Project.models.Event;
 import com.example.BeU2W3_Project.models.User;
 import com.example.BeU2W3_Project.repositories.EventRepository;
@@ -10,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class EventServices {
+public class EventService {
     @Autowired
     private EventRepository eventRepo;
 
@@ -39,10 +41,10 @@ public class EventServices {
             throw new UnauthorizedOperationException("Non sei l'organizzatore di questo evento. Non puoi modificarlo.");
         }
         event.setTitle(payload.getTitle());
-        event.setDescription(payload.getDescription());
+        event.setDescription(payload.get());
         event.setEventDate(payload.getEventDate());
         event.setLocation(payload.getLocation());
-        return eventRepository.save(event);
+        return eventRepo.save(event);
     }
 
     public void deleteEvent(int id, User currentUser) {

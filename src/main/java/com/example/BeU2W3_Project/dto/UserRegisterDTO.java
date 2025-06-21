@@ -1,7 +1,6 @@
 package com.example.BeU2W3_Project.dto;
 
 import com.example.BeU2W3_Project.enumeration.UserRole;
-import com.example.BeU2W3_Project.models.User;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
