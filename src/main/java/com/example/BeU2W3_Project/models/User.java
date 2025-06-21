@@ -1,4 +1,5 @@
 package com.example.BeU2W3_Project.models;
+import com.example.BeU2W3_Project.enumeration.UserRole;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
