@@ -1,4 +1,4 @@
-package com.example.BeU2W3_Project;
+package com.example.beu2w3project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.example.BeU2W3_Project.models;
+package com.example.beu2w3project.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;
