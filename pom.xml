@@ -9,7 +9,7 @@
 		<relativePath/> </parent>
 	<groupId>com.example</groupId>
 	<artifactId>beu2w3project</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>beu2w3project</name>
 	<description>Event Management Project</description>
 	<properties>
