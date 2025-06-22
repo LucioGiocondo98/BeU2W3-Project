@@ -8,9 +8,9 @@
 		<version>3.3.0</version>
 		<relativePath/> </parent>
 	<groupId>com.example</groupId>
-	<artifactId>BeU2W3-Project</artifactId>
+	<artifactId>beu2w3project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BeU2W3-Project</name>
+	<name>beu2w3project</name>
 	<description>Event Management Project</description>
 	<properties>
 		<java.version>17</java.version>
@@ -37,11 +37,13 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -76,6 +78,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
